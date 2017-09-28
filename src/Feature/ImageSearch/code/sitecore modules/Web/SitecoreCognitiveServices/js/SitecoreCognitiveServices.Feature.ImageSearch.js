@@ -310,7 +310,7 @@ jQuery(document).ready(function () {
 
 //closes the search modal and passes value back to the RTE
 function CloseRadWindow(value) {
-
+    
     var radWindow;
 
     if (window.radWindow)
@@ -322,3 +322,95 @@ function CloseRadWindow(value) {
 
     radWindow.Close(value);
 }
+
+/* Webedit Image Field response from insert click
+
+Request URL:https://sc90u0.local/sitecore/shell/Applications/WebEdit/WebEditRibbon.aspx?sc_content=master&ribbonId=%7B570A52B6-6755-461A-8052-5B95EF766F74%7D&id=%7B110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9%7D&dev=%7BFE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3%7D&db=master&mode=edit&url=%2F%3Fsc_mode%3Dedit%26sc_itemid%3D%257b110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9%257d%26sc_version%3D1%26sc_lang%3Den%26sc_site%3Dwebsite&la=en&pageSite=website&version=1&sc_speakribbon=1
+Request Method:POST
+__RESULT:{4B48D87B-E463-42DD-B0F2-F45C382F6204}
+scHtmlValue:{"commands":[{"click":"chrome:field:editcontrol({command:\"cognitive:chooseimage\"})","header":"Choose Cognitive Image","icon":"/temp/iconcache/office/16x16/photo_portrait.png","disabledIcon":"/temp/photo_portrait_disabled16x16.png","isDivider":false,"tooltip":"Choose an image using cognitive image search.","type":""},{"click":"chrome:field:editcontrol({command:\"webedit:chooseimage\"})","header":"Choose Image","icon":"/sitecore/shell/themes/standard/custom/16x16/photo_landscape2.png","disabledIcon":"/temp/photo_landscape2_disabled16x16.png","isDivider":false,"tooltip":"Choose an image.","type":""},{"click":"chrome:field:editcontrol({command:\"webedit:editimage\"})","header":"Properties","icon":"/sitecore/shell/themes/standard/custom/16x16/photo_landscape2_edit.png","disabledIcon":"/temp/photo_landscape2_edit_disabled16x16.png","isDivider":false,"tooltip":"Modify image appearance.","type":""},{"click":"chrome:field:editcontrol({command:\"webedit:clearimage\"})","header":"Clear","icon":"/sitecore/shell/themes/standard/custom/16x16/photo_landscape2_delete.png","disabledIcon":"/temp/photo_landscape2_delete_disabled16x16.png","isDivider":false,"tooltip":"Remove the image.","type":""},{"click":"chrome:common:edititem({command:\"webedit:open\"})","header":"Edit the related item","icon":"/temp/iconcache/office/16x16/cubes.png","disabledIcon":"/temp/cubes_disabled16x16.png","isDivider":false,"tooltip":"Edit the related item in the Content Editor.","type":"common"},{"click":"chrome:rendering:personalize({command:\"webedit:personalize\"})","header":"Personalize","icon":"/temp/iconcache/office/16x16/users_family.png","disabledIcon":"/temp/users_family_disabled16x16.png","isDivider":false,"tooltip":"Create or edit personalization for this component.","type":"sticky"},{"click":"chrome:rendering:editvariations({command:\"webedit:editvariations\"})","header":"Edit variations","icon":"/temp/iconcache/office/16x16/windows.png","disabledIcon":"/temp/windows_disabled16x16.png","isDivider":false,"tooltip":"Edit the variations.","type":"sticky"}],"contextItemUri":"sitecore://master/{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}?lang=en&amp;ver=1","custom":{},"displayName":"Image","expandedDisplayName":null}
+scPlainValue:
+scLayout: {
+    "r": {
+        "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+            "d": [
+                {
+                    "@id": "{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}",
+                    "@l": "{14030E9F-CE92-49C6-AD87-7D49B50E42EA}",
+                    "r": [
+                        {
+                            "@ds": "",
+                            "@id": "{885B8314-7D8C-4CBB-8000-01421EA8F406}",
+                            "@par": "",
+                            "@ph": "main",
+                            "@uid": "{43222D12-08C9-453B-AE96-D406EBB95126}"
+                        },
+                        {
+                            "@ds": "",
+                            "@id": "{CE4ADCFB-7990-4980-83FB-A00C1E3673DB}",
+                            "@par": "",
+                            "@ph": "/main/centercolumn",
+                            "@uid": "{CF044AD9-0332-407A-ABDE-587214A2C808}"
+                        },
+                        {
+                            "@ds": "",
+                            "@id": "{493B3A83-0FA7-4484-8FC9-4680991CF743}",
+                            "@par": "",
+                            "@ph": "/main/centercolumn/content",
+                            "@uid": "{B343725A-3A93-446E-A9C8-3A2CBD3DB489}"
+                        }
+                    ]
+                },
+                {
+                    "@id": "{46D2F427-4CE5-4E1F-BA10-EF3636F43534}",
+                    "@l": "{14030E9F-CE92-49C6-AD87-7D49B50E42EA}",
+                    "r": {
+                        "@ds": "",
+                        "@id": "{493B3A83-0FA7-4484-8FC9-4680991CF743}",
+                        "@par": "",
+                        "@ph": "content",
+                        "@uid": "{A08C9132-DBD1-474F-A2CA-6CA26A4AA650}"
+                    }
+                }
+            ]
+    }
+}
+scDeviceID: FE5D7FDF89C04D999AA3B5FBD009C9F3
+scItemID: 110D559FDEA542EA9C1C8A5DF7E70EF9
+scLanguage: en
+scSite: website
+scCapabilities: design | edit | personalization | testing
+*/
+
+/* Webedit RTE Field response from insert click
+
+Request URL:https://sc90u0.local/sitecore/shell/default.aspx?xmlcontrol=RichText.InsertImage&mo=webedit&la=en
+Request Method:POST
+__PARAMETERS:
+__EVENTTARGET:OK
+__EVENTARGUMENT:
+__SOURCE:OK
+__EVENTTYPE:click
+__CONTEXTMENU:
+__MODIFIED:
+__ISEVENT:1
+__SHIFTKEY:
+__CTRLKEY:
+__ALTKEY:
+__BUTTON:0
+__KEYCODE:undefined
+__X:1056
+__Y:663
+__URL:https://sc90u0.local/sitecore/shell/default.aspx?xmlcontrol=RichText.InsertImage&mo=webedit&la=en
+__CSRFTOKEN:/wEFJDFkZmZjYjE2LWZmNTgtNGExYS1iODZhLWVlMjg4M2ViYzhjZg==
+__VIEWSTATE:A0BED8D0263C4E2D96C5246E67BA7EB6
+__VIEWSTATE:
+Treeview_Selected:04DAD0FDDB664070881F17264CA257E1
+Treeview_Database:master
+Treeview_Parameters:?dv=Master&fi
+Treeview_Language:en
+AlternateText:
+Width:1600
+Height:550
+Filename:/Default Website/cover
+*/
