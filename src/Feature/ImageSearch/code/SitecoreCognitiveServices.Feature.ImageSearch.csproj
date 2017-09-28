@@ -81,6 +81,9 @@
     <Reference Include="Sitecore.ContentSearch.Linq, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.Linq.NoReferences.8.2.170614\lib\NET452\Sitecore.ContentSearch.Linq.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.ExperienceEditor, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.ExperienceEditor.NoReferences.8.2.170614\lib\NET452\Sitecore.ExperienceEditor.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.8.2.170614\lib\NET452\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -144,7 +147,9 @@
     <Content Include="App_Config\Include\SitecoreCognitiveServices\SitecoreCognitiveServices.Feature.ImageSearch.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\SitecoreCognitiveServices\Unicorn.Configs.SitecoreCognitiveServices.Feature.ImageSearch.config" />
+    <Content Include="App_Config\Include\SitecoreCognitiveServices\Unicorn.Configs.SitecoreCognitiveServices.Feature.ImageSearch.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="sitecore modules\Web\SitecoreCognitiveServices\css\chosen-sprite%402x.png" />
     <Content Include="sitecore modules\Web\SitecoreCognitiveServices\css\chosen-sprite.png" />
     <Content Include="sitecore modules\Web\SitecoreCognitiveServices\css\chosen.css" />
@@ -169,6 +174,7 @@
     <Content Include="sitecore modules\Web\SitecoreCognitiveServices\js\Chosen\options.html" />
     <Content Include="sitecore modules\Web\SitecoreCognitiveServices\js\Chosen\package.json" />
     <Content Include="sitecore modules\Web\SitecoreCognitiveServices\js\SitecoreCognitiveServices.Feature.ImageSearch.js" />
+    <Content Include="sitecore\shell\Applications\Page Modes\ChromeTypes\FieldChromeType.js" />
     <Content Include="sitecore\shell\Controls\Rich Text Editor\RichText Commands.js" />
     <Content Include="sitecore\shell\Themes\Standard\Default\Content Manager.css" />
     <Content Include="App_Config\Include\SitecoreCognitiveServices\SitecoreCognitiveServices.Feature.ImageSearch.Lucene.config" />
@@ -200,6 +206,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\IocConfig.cs" />
+    <Compile Include="Commands\ChooseImage.cs" />
     <Compile Include="Commands\Reanalyze.cs" />
     <Compile Include="Commands\ReanalyzeAll.cs" />
     <Compile Include="Commands\SetAltTags.cs" />
